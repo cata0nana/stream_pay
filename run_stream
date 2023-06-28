@@ -9,9 +9,10 @@ ffmpeg -re  \
       -ar 44100\
       -acodec aac\
       -vcodec libx264\
-      -preset medium\
+      -preset medium \
       -crf 28\
       -bufsize 3968k \
+      -maxrate 1984k \
       -threads 4\
       -f flv \
       rtmp://live-ber.twitch.tv/app/live_555128999_wrk8zt4xhB3UOmlizhZsV0jrD19Chx

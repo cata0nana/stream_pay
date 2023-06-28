@@ -1,19 +1,19 @@
 #!/bin/bash
 ffmpeg -re  \
       -i https://pull-flv-l11-va01.tiktokcdn.com/stage/stream-2995582684685664297_or4.flv \
-      -pix_fmt yuvj420p\
+      -pix_fmt yuvj420p \
       -framerate 30 \
-      -x264-params keyint=48:min-keyint=48:scenecut=-1\
-      -b:v 4500k\
-      -b:a 128k\
-      -ar 44100\
-      -acodec aac\
-      -vcodec libx264\
-      -preset medium \
-      -crf 28\
+      -x264-params keyint=48:min-keyint=48:scenecut=-1 \
+      -b:v 4500k \
+      -b:a 128k \
+      -ar 44100 \
+      -acodec aac \
+      -vcodec libx264 \
+      -preset veryfast \
+      -crf 28 \
       -bufsize 3968k \
       -maxrate 1984k \
-      -threads 4\
+      -threads 4 \
       -f flv \
       rtmp://live-ber.twitch.tv/app/live_555128999_wrk8zt4xhB3UOmlizhZsV0jrD19Chx
-      #rtmp://a.rtmp.youtube.com/live2/ms9z-mx5s-fvjg-9tmf-93ap 1t
+#rtmp://a.rtmp.youtube.com/live2/ms9z-mx5s-fvjg-9tmf-93ap 1t

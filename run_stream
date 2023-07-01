@@ -1,6 +1,6 @@
 #!/bin/bash
 ffmpeg -re  \
-      -i https://pull-flv-l11-sg01.tiktokcdn.com/stage/stream-7249914412683774722_or4.flv \
+      -i https://pull-f5-tt03.tiktokcdn.com/stage/stream-3283825508192355197_or4.flv \
       -pix_fmt yuvj420p \
       -x264-params keyint=48:min-keyint=48:scenecut=-1 \
       -b:v 4500k \
